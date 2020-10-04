@@ -1,0 +1,47 @@
+<?php if(!class_exists('Rain\Tpl')){exit;}?><!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>SAPC  | Redefinição de Senha</title>
+
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+  <link rel="stylesheet" href="/resources/templates/bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+  <link rel="stylesheet" href="/resources/templates/dist/css/formatacao.css">
+  
+  <link rel="icon
+  " href="/resources/templates/img/sapc-logo.jpg"/>
+
+</head>
+<body class="hold-transition lockscreen" style="background-image: url('/resources/templates/dist/img/comunidade.jpg');">
+
+<div class="lockscreen-wrapper" style="margin-top: 100px;">
+  <div class="login-box-body">
+  <div class="lockscreen-logo">
+      <center><b style="font-size: 15pt;">Sistema de Auxílio a Projetos Comunitários</b></center>
+  </div>
+
+
+  <div class="help-block text-center">
+    <div class="callout callout-success">
+      <h4 style="color: #000;">Senha Alterada!</h4>
+      <p style="font-size: 12pt; color: #000;">Tente fazer o login com sua nova senha.<br><a style="color: #fff;" href="/login">Clique aqui</a> para fazer o login.</p>
+    </div>
+  </div>
+  <div class="lockscreen-footer text-center">
+    <span style="color: #000;">SAPC - 2019</span> 
+  </div>
+</div>
+</div>
+
+<script src="/resources/admin/plugins/jQuery/jquery-2.2.3.min.js"></script>
+
+<script src="/resources/admin/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

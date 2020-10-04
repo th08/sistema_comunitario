@@ -1,0 +1,55 @@
+<div class="content-wrapper" style="background-image: url('/resources/templates/dist/img/comunidade.jpg');">
+
+    <section class="content-header">
+
+    </section>
+
+    <section class="content">
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title">Visita N°{$visita.idvisita}</h3>
+            </div>
+
+            {if="$msgError != ''"}
+            <div class="alert alert-danger alert-dismissible" style="margin:10px">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <p>{$msgError}</p>
+            </div>
+            {/if}
+            {if="$msgSuccess != ''"}
+            <div class="alert alert-success alert-dismissible" style="margin:10px">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <p>{$msgSuccess}</p>
+            </div>
+            {/if}
+
+            <form role="form" action="/admin/visitas/{$visita.idvisita}/status" method="post">
+                <div class="box-body">
+                    <div class="form-group">
+                        <label for="idstatus">Status da Visita</label>
+                        <select class="form-control" name="idstatus">
+                            {loop="$statusvisita"}
+                            <option {if="$value.idstatus === $visita.idstatus"}selected="selected"{/if} value="{$value.idstatus}">{$value.desstatus}</option>
+                            {/loop}
+                        </select>
+                    </div>
+                </div>
+
+                <div class="box-footer">
+                	 <a style="color: #000;" href="/admin/visitas"><button type="button" class="btn btn-secondary" style="float: left; width: 120px; height: 50px;">Voltar</button></a>
+                     <button type="submit" class="btn btn-success" onclick="return confirm('Deseja realmente mudar o status da visita? ')" style="float: right; width: 120px; height: 50px;">Atualizar</button>
+                </div>
+            </form>
+            </div>
+            </div>
+        </div>
+    
+    </section>
+
+
+    <div class="clearfix"></div>
+
+</div>

@@ -1,0 +1,72 @@
+<div class="content-wrapper" style="background-image: url('/resources/templates/dist/img/comunidade.jpg');">
+<section class="content-header">
+ 
+</section>
+
+<section class="content">
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="box">
+            
+            <div class="box-header">
+              <h3>Visitas Agendadas<small style="float: right;">{function="datePt()"}</small></h3>
+            </div>
+            <div class="box-tools" style="margin-left: 8px;">
+                <form action="/visitas" method="get">
+                  <div class="input-group col-md-4">
+                    <input type="text" name="busca" class="form-control pull-right" placeholder="Buscar" value="{$busca}">
+                    <div class="input-group-btn">
+                      <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                    </div>
+                  </div>
+                </form>
+              </div><br>
+
+            <div class="box-body no-padding">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th style="width: 20px &nbsp;">Cod</th>
+                    <th>Nome</th>
+                    <th>Tel</th>
+                    <th>Data</th>
+                    <th>Horário</th>
+                    <th style="width: 120px">Situação</th>
+                    <th style="width: 240px"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {loop="$visitas"}
+                  <tr>
+                    <td>{$value.idvisita}</td>
+                    <td>{$value.desmoradorvisita}</td>
+                    <td>{$value.desnrtelvisita}</td>
+                    <td>{function="formatDtVisita($value.dtvisita)"}</td/>
+                    <td>{$value.deshorario}</td>
+                    <td>{$value.desstatus}</td>
+                    <td>
+
+                      <div style="float: right;">
+                      <a href="/visitas/{$value.idvisita}/detalhes" class="btn btn-default btn-xs"><i class="fa fa-search"></i> Detalhes</a>
+                      <a href="/visitas/{$value.idvisita}/status" class="btn btn-primary btn-xs"><i class="fa fa-edit"></i> Editar</a>
+                    </td>
+                  </div>
+                </tr>
+                {/loop}
+                </tbody>
+              </table>
+               <div class="box-footer clearfix"  style="background: #72afd2;">
+              <ul class="pagination pagination-sm no-margin pull-right">
+                {loop="$paginas"}
+                <li><a href="{$value.href}">{$value.texto}</a></li>
+                {/loop}
+              </ul>
+            </div>
+            </div>
+          </div>
+    </div>
+  </div>
+
+</section>
+</div>

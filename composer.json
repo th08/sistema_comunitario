@@ -1,0 +1,19 @@
+{
+    "name": "th75/sapc",
+    "authors": [
+        {
+            "name": "Thiago Miranda",
+            "email": "ogaihtprojetos1998@gmail.com"
+        }
+    ],
+    "require": {
+    	"phpmailer/phpmailer":"5.2.28",
+    	"slim/slim":"2.6.0",
+    	"rain/raintpl":"3.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TH\\": "vendor\\sapc\\php-classes\\src"
+        }
+    }
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>SAPC</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="dist/css/formatacao.css">
+</head>
+
+
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+
+  <!-- cabeçalho principal -->
+  <header class="main-header">
+
+    <!-- logo -->
+    <a href="#" class="logo">
+      <span class="logo-mini">SAPC</span>
+      <span class="logo-lg"><b>SAPC</b></span>
+    </a>
+
+    <!-- navegacao cabecalho -->
+    <nav class="navbar navbar-static-top" role="navigation">
+      <!-- botao ocultar esquerdo-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+
+      <div class="tittleMenu">
+      		<span class="logo-lg"><b>Sistema de Auxílio a Projetos Comunitários</b></span>
+      </div>
+    
+      <!-- lado direito menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- usuario conta -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <!-- icone do usuario-->
+              <i class="glyphicon glyphicon-user"></i>
+              <!-- esconder depois em dispositivos pequenos o nome do usuario -->
+              <span class="hidden-xs">{Nome do Usuario}</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- icone de usuario no menu -->
+              <li class="user-header">
+                <img src="dist/img/user.png" class="img-circle" alt="User Image">
+               <p>{Nome do Usuário}</p>
+               <small>{Admin ou Membro}</small>
+              </li>
+              <!-- footer do menu -->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="fas fa-user-edit btn btn-info btn-flat">Perfil</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="fas fa-window-close btn btn-danger btn-flat">Sair</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- lado esquerdo, contem o menu lateral -->
+  <aside class="main-sidebar">
+
+    <section class="sidebar">
+
+      <div class="user-panel">
+        <div class="pull-left info">
+          <!--Nome do usuario-->
+          <center><p>{Nome do Usuário}</p></center>
+        </div>
+      </div><br/><br/><br/><br/>
+
+      <!-- menu lateral esquerdo -->
+      <ul class="sidebar-menu">
+        <li class="header"><b>MENU</b></li>
+        <!--menus -->
+        <li class="treeview"><a href="#"><i class="fa fa-home"></i> <span>Home</span></a></li>
+         
+         <li class="treeview">
+          <a href="#"><i class="fa fa-users"></i> <span>Moradores</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-user-plus"></i><span>Cadastrar</span></a></li>
+            <li><a href="#"><i class="fa fa-search"></i><span>Consultar</span></a></li>
+          </ul>
+        </li>
+
+        <li class="treeview">
+          <a href="#"><i class="fa fa-envelope"></i> <span>Visitas</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fas fa-calendar-plus"></i></i><span>Nova visita</span></a></li>
+            <li><a href="#"><i class="fa fa-search"></i><span>Consultar</span></a></li>
+          </ul>
+        </li>
+
+         <li class="treeview">
+          <a href="#"><i class="fa fa-cog"></i> <span>Configurações</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fas fa-user-edit"></i><span>Editar Perfil</span></a></li>
+            <li><a href="#"><i class="fas fa-window-close"></i><span>Sair</a></li>
+          </ul>
+        </li>
+
+      </ul>
+      <!-- /barra lateral esquerda -->
+    </section>
+    <!-- /lado esquerdo -->
+  </aside>
+
+  <!-- todo o corpo da pagina -->
+  <div class="content-wrapper">
+
+    <section class="content-header">
+      <center><h4>Bem - Vindo {Nome do Usuario}</h4></center>
+      <span style="float: right;">{Data atual}</span>
+    </section>
+
+    <!--sessao-->
+    <section class="content">
+
+      <!-- Conteudo da pagina aqui -->
+
+    </section>
+    <!-- /.fim do conteudo -->
+  </div>
+  <!-- /.fim do conteudo da pagina -->
+
+  <!-- rodape principal -->
+  <footer class="main-footer">
+    <!-- Direita -->
+    <div class="pull-right hidden-xs">
+      Desenvolvido por <b>Thiago Miranda</b>
+    </div>
+    <!-- Esquerda -->
+    <strong>Sistema de Auxílio a Projetos Comunitários 2019.</strong>
+  </footer>
+
+  <!-- Aside -->
+  <aside class="control-sidebar control-sidebar-dark">
+
+  </aside>
+  <!-- /.Fim do aside -->
+  <div class="control-sidebar-bg"></div>
+</div>
+
+
+<!-- Scripts -->
+
+<!-- jQuery 2.2.3 -->
+<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/app.js"></script>
+
+</body>
+</html>

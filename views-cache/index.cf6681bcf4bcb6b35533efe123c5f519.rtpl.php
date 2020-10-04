@@ -1,0 +1,26 @@
+<?php if(!class_exists('Rain\Tpl')){exit;}?><div class="content-wrapper" style="background-image: url('/resources/templates/dist/img/comunidade.jpg');">
+
+<section class="content-header">
+</section>
+
+
+<section class="content">
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="box">
+          <div class="box-header with-border">
+            <center><h3>Bem vindo <b><?php echo getUserName(); ?></b></h3></center><br><br>
+            <div class="esquerda" style="width: 500px; float: left; margin-left: 10px;">
+              <img src="/resources/templates/img/sapc-logo.jpg" style="width: 450px; height: 350px;">
+            </div>
+            <div class="direita" style="width: 500px; float: right; margin-left: 10px; font-size: 14pt;">
+              <h1>Sobre</h1><br>
+              <p style="text-align: justify; margin-right: 10px;"><b>O sistema de Auxílio a Projetos Comunitários</b> foi desenvolvido com o intuito de ser uma ferramenta de apoio a instituições que realizam projetos visando o bem da comunidade como escolas públicas, igrejas e outras instituições que fazem algum tipo de doação a moradores necessitados. Ele ainda se encontra em sua primeira versão onde foi finalizado no dia <b>11/11/2019</b> sendo feito exclusivamente para agendamento de visitas e doações. A medida em que ele for utilizado e avaliado pelos seus usuários, novas funcionalidades serão adicionadas.</p><br><br>
+            </div>
+           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

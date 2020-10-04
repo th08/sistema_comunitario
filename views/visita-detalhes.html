@@ -1,0 +1,67 @@
+
+<div class="content-wrapper" style="background-image: url('/resources/templates/dist/img/comunidade.jpg');">
+    <section class="content-header">
+    </section>
+
+    <section class="invoice">
+        <div class="row">
+            <div class="col-xs-12">
+            <h2 class="page-header">
+                   <a style="color: #000;" href="/visitas"><button type="button" class="btn btn-secondary" style="float: left; width: 120px; height: 50px;">Voltar</button></a><br>
+                <h1>Visita N°{$visita.idvisita}</h1>
+                <center><h1>Comprovante de Doação</h1>
+                <img src="/resources/templates/img/sapc-logo.jpg" alt="Logo">
+                <small class="pull-right">Data: {function="date('d/m/Y')"}</small> 
+            </h2>
+            </div>
+        </div>
+        <div class="row invoice-info">
+            <div class="col-sm-4 invoice-col">
+            De
+            <address>
+                <strong>SAPC</strong><br>
+                Sistema de Auxílio a Projetos Comunitários<br>
+                Juiz de Fora - MG<br><br>
+                <small>Versão 0.1</small>
+            </address>
+            </div>
+            <div class="col-sm-4 invoice-col">
+            Para
+            <address>
+                <strong>{$visita.desmoradorvisita}</strong><br>
+                {$visita.desendereco}, {$visita.descomplementovisita}, {$visita.descidadevisita}<br>
+                <br>
+                {if="$visita.desnrtelvisita && $visita.desnrtelvisita!='0'"}Telefone: {$visita.desnrtelvisita}<br>{/if}
+                {if="$visita.desemailvisita && $visita.desemailvisita!='0'"}
+                E-mail: {$visita.desemailvisita}{/if}
+            </address>
+            </div>
+            <div class="col-sm-4 invoice-col">
+            <b>Visita #{$visita.idvisita}</b><br>
+            <br>
+            <b>Emitido em:</b> {function="formatDate($visita.dtregistro)"}<br>
+            </div>
+        </div><br><br>
+
+        <center><div class="row">
+            <p>O <b>SAPC</b> declara que foi realizada a visita a(o) Srº(ª) <b>{$visita.desmoradorvisita}</b> em <b> {function="formatDtVisita($visita.dtvisita)"}</b> na  <b>{$visita.desendereco}</b> onde foi entregue <b>{$visita.desdoacao}</b>.</p><br>
+                <b>____________________________________________________</b><br/>
+                <small>Assinatura do Morador</small>
+            </b><br/>
+       </div></center>
+        <div class="row no-print">
+            <div class="col-xs-12">
+                <button type="button" onclick="window.location.href = '/visitas/{$visita.idvisita}/status'" class="btn btn-default pull-left" style="margin-left: 5px;">
+                    <i class="fa fa-pencil"></i> Editar Status
+                </button>
+                
+                <button type="button" onclick="window.print()" class="btn btn-primary pull-right" style="margin-right: 5px;">
+                    <i class="fa fa-print"></i> Imprimir
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <div class="clearfix"></div>
+
+</div>
